@@ -10,7 +10,8 @@ module.exports = {
         "primary": "#13a458",
         "primary-light": "#42b679",
         "primary-dark": "#0f8346",
-        "emas": "#f9813a"
+        "emas": "#f9813a",
+        "primary-text": "#263238"
       }
     },
   },

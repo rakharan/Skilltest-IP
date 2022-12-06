@@ -1,0 +1,42 @@
+.text__area {
+    @media (min-width:768px) {
+        background-image: url(../img/bg-hero.webp);
+        background-repeat: no-repeat;
+        background-size: 70%;
+        background-position: center right;
+    }
+
+    @media (min-width:1024px) {
+        background-size: 50%;
+    }
+}
+
+.stats__card {
+    box-shadow: 0px 4px 20px 3px rgb(0 0 0 / 15%);
+}
+
+.header__description {
+    background: url(../img/orangeDot.svg) no-repeat right;
+    background-size: auto;
+}
+
+
+.content__card {
+    @media (min-width:640px) {
+        background: rgb(254, 254, 254);
+        box-shadow: rgb(0 0 0 / 15%) 0px 4px 20px 3px;
+    }
+}
+
+.feature__left {
+    background: url(../img/greenDot.svg) no-repeat top left;
+    background-size: auto;
+}
+
+.feature__card__content {
+    box-shadow: 0px 4px 20px 3px rgb(0 0 0 / 15%);
+}
+
+.community__container {
+    background: url(../img/bgTele.svg) center top / cover no-repeat;
+}
