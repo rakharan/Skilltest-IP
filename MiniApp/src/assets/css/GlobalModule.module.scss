@@ -82,3 +82,15 @@
         border-radius: 9999px;
     }
 }
+
+.partnership__header {
+    grid-template-columns: 55% 45%;
+}
+
+.pokemon__card {
+    box-shadow: 8px 8px 0 0 #92898a;
+
+    &:hover {
+        box-shadow: 15px 15px 0 0 #92898a;
+    }
+}

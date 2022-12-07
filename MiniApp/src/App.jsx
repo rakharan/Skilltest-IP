@@ -3,11 +3,12 @@ import { Link, Route, Routes, useLocation } from "react-router-dom";
 import About from "./pages/About";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
+import Partnership from "./pages/Partnership";
+import Pokemon from "./pages/Pokemon";
 import PageLayout from "./parts/PageLayout";
 
 const App = () => {
   const [mobileNavbar, setMobileNavbar] = useState(false);
-  console.log(mobileNavbar);
   var ro = new ResizeObserver((entries) => {
     for (let entry of entries) {
       const cr = entry.contentRect;
@@ -33,6 +34,8 @@ const App = () => {
         >
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
+          <Route path="partnership" element={<Partnership />} />
+          <Route path="pokemon" element={<Pokemon />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>

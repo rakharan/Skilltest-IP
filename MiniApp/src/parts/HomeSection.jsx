@@ -15,11 +15,11 @@ const HomeSection = () => {
           <br />
           di Indonesia
         </h1>
-        <h5 className="block box-border font-normal text-base leading-6 mb-6 ">
+        <h2 className="block box-border font-normal text-base leading-6 mb-6 ">
           Ikutan diskusi forum tanya jawab, tulis blog dan
           <br />
           Membangun portofolio semua di Kotakode
-        </h5>
+        </h2>
         <div className="input_area flex flex-row text-center items-center mb-16 md:mb-0 md:text-left gap-4">
           <input
             placeholder="Masukkan Email Kamu"

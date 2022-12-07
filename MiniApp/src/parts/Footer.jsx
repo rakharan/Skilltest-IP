@@ -102,23 +102,25 @@ const Footer = () => {
               Bagian Dari:
             </h2>
             <nav className="navDetail mb-10 list-none">
-              <div className="partnerContainer flex flex-col items-center lg:flex-row">
-                <li>
-                  <a href="#">
-                    <img className="min-w-[106px]" src={block71} alt="icon" />
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <div className="googleContainer w-[200px] flex p-1 bg-white mt-8 lg:mt-0 lg:ml-8">
-                      <img
-                        width={"200px"}
-                        src={google}
-                        alt="google for startups logo"
-                      />
-                    </div>
-                  </a>
-                </li>
+              <div className="partnerContainer ">
+                <ul className="flex flex-col items-center lg:flex-row">
+                  <li>
+                    <a href="#">
+                      <img className="min-w-[106px]" src={block71} alt="icon" />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <div className="googleContainer w-[200px] flex p-1 bg-white mt-8 lg:mt-0 lg:ml-8">
+                        <img
+                          width={"200px"}
+                          src={google}
+                          alt="google for startups logo"
+                        />
+                      </div>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </nav>
           </div>
@@ -128,7 +130,9 @@ const Footer = () => {
             <h2 className="font-bold text-white text-sm uppercase mb-3">
               PRODUK
             </h2>
-            <nav className="navDetail mb-10 list-none">{footerLinkList1}</nav>
+            <nav className="navDetail mb-10 list-none">
+              <ul>{footerLinkList1}</ul>
+            </nav>
           </div>
         </div>
         <div className="footerNavContainer flex flex-wrap justify-between mt-10 -mb-10 text-center md:mt-0 md:text-center md:pl-4 lg:text-left">
@@ -136,7 +140,9 @@ const Footer = () => {
             <h2 className="font-bold text-white uppercase text-sm mb-3">
               PERUSAHAAN
             </h2>
-            <nav className="navDetail mb-10 list-none">{footerLinkList2}</nav>
+            <nav className="navDetail mb-10 list-none">
+              <ul>{footerLinkList2}</ul>
+            </nav>
           </div>
         </div>
         <div className="footerNavContainer flex flex-wrap justify-between mt-10 -mb-10 text-center md:mt-0 md:text-center md:pl-4 lg:text-left">
@@ -145,13 +151,17 @@ const Footer = () => {
               Hubungi Kami
             </h2>
             <nav className="navDetail mb-10 list-none">
-              <li className="footerLink pt-[10px]">
-                <a href="#" className="text-white">
-                  rakha@sagameda.com
-                </a>
-              </li>
+              <ul>
+                <li className="footerLink pt-[10px]">
+                  <a href="#" className="text-white">
+                    rakha@sagameda.com
+                  </a>
+                </li>
+              </ul>
               <span className="iconContainer text-white inline-flex mt-[10px] pr-2 justify-center">
-                {contactList}
+                <ul className="iconContainer text-white inline-flex mt-[10px] pr-2 justify-center">
+                  {contactList}
+                </ul>
               </span>
             </nav>
           </div>

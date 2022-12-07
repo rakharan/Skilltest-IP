@@ -14,7 +14,7 @@ body {
   width: 100%;
   color: #191919;
   background-color: #fefefe;
-  font-family: 'Quicksand' !important;
+  font-family: 'Quicksand', sans-serif !important;
   line-height: normal;
   user-select: none;
 }
@@ -55,4 +55,9 @@ h2 {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   font-weight: bold;
+}
+
+/* Active Navigation */
+.active {
+  color: #13a458;
 }
