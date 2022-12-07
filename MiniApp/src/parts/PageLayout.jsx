@@ -16,11 +16,3 @@ const PageLayout = (props) => {
 };
 
 export default PageLayout;
-// const PageLayout = (props) => {
-//   return (
-//     <>
-//     </>
-//   );
-// };
-
-// export default PageLayout;

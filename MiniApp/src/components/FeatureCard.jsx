@@ -44,7 +44,7 @@ const FeatureCard = (props) => {
           <img
             src={data.src}
             alt="icon"
-            className="block mt-8 min-w-[110px] object-center md:m-auto md:h-16 md:w-[110px] lg:w-full "
+            className="block mt-8 min-w-[110px] md:m-auto md:h-16 md:w-[110px] lg:w-full min-h-full md:rounded-[50%]"
           />
         </div>
         <div className="descContainer text-center md:text-left p-6 pt-0 flex flex-col sm:block ">

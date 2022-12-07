@@ -47,5 +47,6 @@ import tagsNav from "./tagsNav.svg"
 import tentangNav from "./tentangNav.svg"
 import twitter from "./twitter.svg"
 import yahoo from "./yahoo.png"
+import notFound from "./error404.webp"
 
-export { kucingWhySatu, kucingWhyDua, kucingWhyTiga, logo, burgerMenu, homeNav, telegram, featureCard1, featureCard2, featureCard3, android, block71, blogsNav, bootstrap, cnn, codeIgniter, css, dailySocial, eventsNav, facebook, faqNav, firebase, forumNav, gitlab, google, html, instagram, java, javascript, jobsNav, jquery, kotlin, leaderboardNav, linkedin, liputan6, loginNav, merdeka, mysql, nodejs, partnershipNav, php, python, react, signupNav, swift, tagsNav, tentangNav, twitter, yahoo }
+export { kucingWhySatu, kucingWhyDua, kucingWhyTiga, logo, burgerMenu, homeNav, telegram, featureCard1, featureCard2, featureCard3, android, block71, blogsNav, bootstrap, cnn, codeIgniter, css, dailySocial, eventsNav, facebook, faqNav, firebase, forumNav, gitlab, google, html, instagram, java, javascript, jobsNav, jquery, kotlin, leaderboardNav, linkedin, liputan6, loginNav, merdeka, mysql, nodejs, partnershipNav, php, python, react, signupNav, swift, tagsNav, tentangNav, twitter, yahoo, notFound }
