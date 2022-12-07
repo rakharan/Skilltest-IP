@@ -12,6 +12,9 @@ module.exports = {
         "primary-dark": "#0f8346",
         "emas": "#f9813a",
         "primary-text": "#263238"
+      },
+      backgroundSize: {
+        "50%": "50%"
       }
     },
   },

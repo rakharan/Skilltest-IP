@@ -5,7 +5,9 @@ const Navlink = (props) => {
     <a
       key={key}
       href="#"
-      className={`navLink px-4  items-center box-border flex cursor-pointer text-xs font-bold mx-1 relative my-2 bg-putih h-10 rounded hover:bg-primary/50 hover:ease-in gap-2`}
+      className={` ${
+        props.mobileNavbar ? "cursor-pointer" : "cursor-default"
+      } navLink px-4  items-center box-border flex text-xs font-bold mx-1 relative my-2 bg-putih h-10 rounded hover:bg-primary/50 hover:ease-in gap-2`}
     >
       <div>
         <img

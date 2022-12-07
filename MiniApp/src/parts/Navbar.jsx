@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import ReactDOM from "react-dom";
 import { logo, burgerMenu } from "../assets/img";
 import Button from "../components/Button";
@@ -10,12 +10,13 @@ import {
 } from "../mobilenavbar/NavlinkData";
 import Navlink from "../mobilenavbar/Navlink";
 import styles from "../assets/css/GlobalModule.module.scss";
+import { Link } from "react-router-dom";
 
 const MobileNavbar = (props) => {
   return (
     <div
       className={` ${styles.mobile__menu}  ${
-        props.isMobileNavbar ? " opacity-100 visible scale-100" : ""
+        props.mobileNavbar ? " opacity-100 visible scale-100" : ""
       }
      mobileNavbar bg-white rounded text-center min-w-[200px] min-h-[40px] z-20 top-[60px] overflow-hidden right-0`}
     >
@@ -26,19 +27,19 @@ const MobileNavbar = (props) => {
               <h2 className="navTitle text-xs font-semibold mt-2 leading-4 ml-4 text-left">
                 Navigasi
               </h2>
-              <Navlink data={navLinkData1} />
+              <Navlink mobileNavbar={props.mobileNavbar} data={navLinkData1} />
             </div>
             <div>
               <h2 className="navTitle text-xs font-semibold mt-2 text-left leading-4 ml-4">
                 Produk
               </h2>
-              <Navlink data={navLinkData2} />
+              <Navlink mobileNavbar={props.mobileNavbar} data={navLinkData2} />
             </div>
             <div>
               <h2 className="navTitle text-xs font-semibold mt-2 text-left leading-4 ml-4">
                 Login
               </h2>
-              <Navlink data={navLinkData3} />
+              <Navlink mobileNavbar={props.mobileNavbar} data={navLinkData3} />
             </div>
           </div>
         </nav>
@@ -54,12 +55,12 @@ const Navbar = (props) => {
         <div className="navbar w-full flex flex-col bg-white">
           <div className="box-border items-center max-w-[1920px] w-full h-[64px] px-4 flex xl:px-20">
             <div className="bar w-full flex flex-row justify-between gap-10 py-[5px] px-0 items-center">
-              <a
-                href="#"
+              <Link
+                to="/"
                 className="navbar__logo flex cursor-pointer items-center flex-[1_1_0%]"
               >
                 <img src={logo} width={"120px"} alt="navbar logo" />
-              </a>
+              </Link>
               <div className="desktop__menu hidden lg:flex lg:flex-[4_1_0%]">
                 <DesktopMenu />
               </div>
@@ -81,7 +82,7 @@ const Navbar = (props) => {
               <div className="mobileMenu lg:hidden">
                 <button
                   className={`items-center min-w-max py-2 px-4 ${
-                    props.isMobileNavbar
+                    props.mobileNavbar
                       ? "bg-primary rounded text-white"
                       : "bg-white"
                   } `}
@@ -91,10 +92,10 @@ const Navbar = (props) => {
                       src={burgerMenu}
                       alt="icon"
                       className={`${
-                        props.isMobileNavbar ? "invert" : "invert-0"
+                        props.mobileNavbar ? "invert" : "invert-0"
                       }`}
                       onClick={() => {
-                        props.setMobileNavbar(!props.isMobileNavbar);
+                        props.setMobileNavbar(!props.mobileNavbar);
                       }}
                     />
                   </div>
@@ -107,7 +108,7 @@ const Navbar = (props) => {
       </div>
       <>
         {ReactDOM.createPortal(
-          <MobileNavbar isMobileNavbar={props.isMobileNavbar} />,
+          <MobileNavbar mobileNavbar={props.mobileNavbar} />,
           document.getElementById("portal-root")
         )}
       </>
