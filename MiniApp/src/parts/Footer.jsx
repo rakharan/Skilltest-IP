@@ -1,6 +1,7 @@
 import React from "react";
 import { block71, google } from "../assets/img";
 import { linkedin, instagram, twitter, facebook } from "../assets/img";
+import BackToTop from "../components/BackToTop";
 const Footer = () => {
   const contact = [
     {
@@ -161,6 +162,7 @@ const Footer = () => {
         <p>Copyright 2020 Kotakode. All rights reserved</p>
         <p>Cloned with ❤️ in 🇮🇩 by Sagameda</p>
       </div>
+      <BackToTop text="Kembali ke Atas" />
     </footer>
   );
 };
