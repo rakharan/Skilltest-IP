@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "../assets/css/GlobalModule.module.scss";
 import {
   partnerIllustrate,
@@ -7,9 +7,16 @@ import {
   expand,
   chatGroup,
   compLogo,
+  greenQuote,
+  quote,
 } from "../assets/img/Partnership";
 import Button from "../components/Button";
+import Review from "../components/Review";
 const Partnership = () => {
+  const [isClicked, setIsClicked] = useState(false);
+  const onClickHandler = () => {
+    setIsClicked(!isClicked);
+  };
   return (
     <div
       className="min-h-screen max-w-[1920px] flex px-4 xl:px-20 mx-auto pt-5 mt-0
@@ -136,7 +143,19 @@ const Partnership = () => {
               Pemerintah, Institusi Pendidikan, organisasi non-profit untuk
               memfasilitasi murid dalam belajar pemrograman.
             </p>
-            <img src={compLogo} alt="community list" className="w-[75%]" />
+            <img
+              src={compLogo}
+              alt="community list"
+              className="w-full md:w-[75%]"
+            />
+          </div>
+          <div className="mt-[212px] flex flex-col justify-center">
+            <h2 className="text-center text-[40px] font-black leading-[51px] mb-[72px]">
+              Apa yang orang katakan
+            </h2>
+            <div className="three__columns grid w-full m-auto grid-cols-1 sm:grid-cols-3 max-w-[1100px]">
+              <Review />
+            </div>
           </div>
         </div>
         <div className="BAWAH mt-[132px] flex items-center flex-col justify-center left-[50%] right-[50%] w-screen overflow-hidden relative -ml-[50vw] -mr-[50vw]">
