@@ -107,9 +107,13 @@ const Navbar = (props) => {
         </div>
       </div>
       <>
-        {ReactDOM.createPortal(
-          <MobileNavbar mobileNavbar={props.mobileNavbar} />,
-          document.getElementById("portal-root")
+        {props.mobileNavbar ? (
+          ReactDOM.createPortal(
+            <MobileNavbar mobileNavbar={props.mobileNavbar} />,
+            document.getElementById("portal-root")
+          )
+        ) : (
+          <div></div>
         )}
       </>
     </>

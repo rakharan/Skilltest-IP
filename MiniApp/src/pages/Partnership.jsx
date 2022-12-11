@@ -7,8 +7,6 @@ import {
   expand,
   chatGroup,
   compLogo,
-  greenQuote,
-  quote,
 } from "../assets/img/Partnership";
 import Button from "../components/Button";
 import Review from "../components/Review";
@@ -158,12 +156,12 @@ const Partnership = () => {
             </div>
           </div>
         </div>
-        <div className="BAWAH mt-[132px] flex items-center flex-col justify-center left-[50%] right-[50%] w-screen overflow-hidden relative -ml-[50vw] -mr-[50vw]">
-          <div className="absolute mx-6 pt-[120px]">
-            <h2 className="text-[#fefefe] text-center text-[40px] font-black leading-[51px]">
+        <div className="BAWAH mt-[132px] flex items-center flex-col justify-center left-[50%] right-[50%] w-screen overflow-hidden relative -mx-[52vw]">
+          <div className="relative pt-0 mb-10 lg:absolute mx-6 lg:pt-[180px]">
+            <h2 className="text-[32px] leading-[40px] lg:text-[#fefefe] text-center lg:text-[40px] font-black lg:leading-[51px]">
               Tertarik untuk bergabung?
             </h2>
-            <p className="text-[#fefefe] text-center text-[16px] leading-[188%] mt-3 max-w-[625px]">
+            <p className=" lg:text-[#fefefe] text-center text-[16px] leading-[188%] mt-3 max-w-[625px]">
               Tiap harinya, kami selalu memberikan yang terbaik untuk pengguna
               setia Kotakode. Mulai dari Aplikasi, Teknologi, dan Komunitas.
               Bergabunglah bersama kami untuk menyediakan ekosistem IT terbaik

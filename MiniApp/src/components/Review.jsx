@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { quote, greenQuote } from "../assets/img/Partnership";
 const Review = () => {
   const [currentIndex, setCurrentIndex] = useState({
