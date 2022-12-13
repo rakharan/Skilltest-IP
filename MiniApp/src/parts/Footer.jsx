@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import { block71, google } from "../assets/img";
 import { linkedin, instagram, twitter, facebook } from "../assets/img";
 import BackToTop from "../components/BackToTop";
@@ -38,22 +39,27 @@ const Footer = () => {
   const footerLink1 = [
     {
       id: 1,
+      href: "/pertanyaan",
       text: "Pertanyaan",
     },
     {
       id: 2,
+      href: "/blogs",
       text: "Blog",
     },
     {
       id: 3,
+      href: "/users",
       text: "Pengguna",
     },
     {
       id: 4,
+      href: "/events",
       text: "Events",
     },
     {
       id: 5,
+      href: "/partnership",
       text: "Partnership",
     },
   ];
@@ -61,35 +67,45 @@ const Footer = () => {
   const footerLink2 = [
     {
       id: 1,
+      href: "/about",
       text: "About",
     },
     {
       id: 2,
+      href: "/faq",
       text: "FAQ",
     },
     {
       id: 3,
+      href: "/rules",
       text: "Rules",
     },
     {
       id: 4,
+      href: "/legal",
       text: "Legal",
     },
   ];
 
   const footerLinkList1 = footerLink1.map((data) => (
     <li key={data.id} className="pt-[10px]">
-      <a href="#" className="text-[#848D95]">
+      <NavLink
+        to={data.href}
+        className={({ active }) => (active ? "" : "text-[#848D95]")}
+      >
         {data.text}
-      </a>
+      </NavLink>
     </li>
   ));
 
   const footerLinkList2 = footerLink2.map((data) => (
     <li key={data.id} className="pt-[10px]">
-      <a href="#" className="text-[#848D95]">
+      <NavLink
+        to={data.href}
+        className={({ active }) => (active ? "" : "text-[#848D95]")}
+      >
         {data.text}
-      </a>
+      </NavLink>
     </li>
   ));
 
