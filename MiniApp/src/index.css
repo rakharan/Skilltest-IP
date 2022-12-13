@@ -17,6 +17,7 @@ body {
   font-family: 'Quicksand', sans-serif !important;
   line-height: normal;
   user-select: none;
+  scroll-behavior: smooth;
 }
 
 p {
