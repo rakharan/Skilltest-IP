@@ -61,7 +61,7 @@ const Navbar = (props) => {
               >
                 <img src={logo} width={"120px"} alt="navbar logo" />
               </Link>
-              <div className="desktop__menu hidden lg:flex lg:flex-[4_1_0%]">
+              <div className="desktop__menu hidden lg:flex lg:flex-[4_1_0%] relative ">
                 <DesktopMenu />
               </div>
               <div className="desktop__menu__button hidden lg:flex flex-row justify-end flex-[2_1_0%]">

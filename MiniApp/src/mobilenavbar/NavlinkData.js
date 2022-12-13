@@ -39,6 +39,7 @@ const navLinkData1 = [
     },
     {
         key: 5,
+        href: "/leaderboard",
         icon: leaderboardNav,
         title: "Leaderboad"
     },
