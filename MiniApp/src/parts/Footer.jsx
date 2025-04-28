@@ -8,12 +8,12 @@ const Footer = () => {
     {
       id: 1,
       img: linkedin,
-      href: "https://www.linkedin.com/in/rakha-randhikatama/",
+      href: "https://www.linkedin.com/",
     },
     {
       id: 2,
       img: instagram,
-      href: "https://www.instagtam.com/rakharan",
+      href: "https://www.instagram.com/",
     },
     {
       id: 3,
@@ -23,7 +23,7 @@ const Footer = () => {
     {
       id: 4,
       img: facebook,
-      href: "https://web.facebook.com/rakha.randhikatama/",
+      href: "https://web.facebook.com/",
     },
   ];
   const contactList = contact.map((data) => (
@@ -170,7 +170,7 @@ const Footer = () => {
               <ul>
                 <li className="footerLink pt-[10px]">
                   <a href="#" className="text-white">
-                    rakha@sagameda.com
+                    saga@sagameda.com
                   </a>
                 </li>
               </ul>
